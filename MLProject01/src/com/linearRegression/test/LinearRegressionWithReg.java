@@ -50,7 +50,7 @@ public class LinearRegressionWithReg {
 
 		/* Computing WEIGHT VECTOR for M=9 */
 		Matrix W = computeW.getW(9, xValuesTrainData, tValuesTrainData);
-
+		
 		/* return ERMS value for Test Data */
 		return erms.compute(W, xValuesTestData, tValuesTestData,
 				optimallnLambda);

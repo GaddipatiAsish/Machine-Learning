@@ -76,7 +76,6 @@ public class ERMS {
 
 		/* compute Y */
 		Matrix Y = matrices.multiply(W.transpose(), X);
-
 		/* Compute wNorm */
 		double wNorm = matrices.multiply(W.transpose(), W).get(
 				0, 0);

@@ -26,7 +26,7 @@ import com.linearRegression.io.IOOperations;
  */
 public class LinearRegressionWithoutReg {
 	/**
-	 * @description Main Method to test Linear regression with OUT Regularisation
+	 * @description Main Method to test Linear regression with OUT Regularization
 	 * 
 	 * @param args
 	 * @throws Exception
@@ -83,6 +83,7 @@ public class LinearRegressionWithoutReg {
 		 * FIND ERMS VS M VALUES TO PLOT GRAPH
 		 */
 		for (int i = 0; i <= orderOfPolynomial; i++) {
+			
 			WeightVector computeW = new WeightVector();
 			ERMS erms = new ERMS();
 			/* Computing WEIGHT VECTOR for M=0..9 */
@@ -90,11 +91,12 @@ public class LinearRegressionWithoutReg {
 			/* ERMS vs M map for Training Data */
 			eRMSvsM_trainValidData_Map.put(i,
 					erms.compute(W, xValuesTrainData, tValuesTrainData));
+			
 			/* ERMS vs M map for Test Data */
 			eRMSvsM_testData_Map.put(i,
 					erms.compute(W, xValuesTestData, tValuesTestData));
 		}
-
+		
 		/* generates R file */
 		drawGraph(eRMSvsM_trainValidData_Map, eRMSvsM_testData_Map);
 
