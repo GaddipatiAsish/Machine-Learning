@@ -16,7 +16,7 @@ In the run Configurations give the path of the data files.
 /Users/AsishKumar/Documents/workspace/MachineLearningProject01/InputData/valid.dat
 /Users/AsishKumar/Documents/workspace/MachineLearningProject01/InputData/test.dat
 
-	For Linear Regression with Regularization:
+For Linear Regression with Regularization:
 	To find ERMS values of test data on these two models
 	a) Train with training data and test with test data
 	b)Train on Training + Validation data and test on test data.
