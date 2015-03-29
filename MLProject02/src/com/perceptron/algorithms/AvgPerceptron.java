@@ -5,8 +5,6 @@ import java.util.List;
 
 import weka.core.matrix.Matrix;
 
-import com.perceptron.martixOperations.MatrixOperations;
-
 /**
  * TwoClassAvgPerceptron class implements the Averaged Perceptron algorithm that
  * classify the data set in two classes. The algorithm will output the averaged
@@ -17,49 +15,7 @@ import com.perceptron.martixOperations.MatrixOperations;
  * @author AsishKumar
  *
  */
-public class TwoClassAvgPerceptron {
-//	/*
-//	Matrix computeW(Matrix W, int noOfEpochs, List<Matrix> features,
-//			List<Double> T) {
-//		Matrix wBar = W; /* load initial values as same as W to avgW */
-//		int toeCounter = 1; /* counts the Iterations to average W */
-//		int counter = 0; /* used to count the no of Epochs */
-//		boolean flag = true; /* sets to False : If Model converge */
-//		/* External loop on noOfEpochs */
-//		do {
-//			MatrixOperations matrices = new MatrixOperations();
-//			/* Internal Loop for Xi=1 to N (training data set) */
-//			Iterator<Matrix> iterator1 = features.iterator();
-//			Iterator<Double> iterator2 = T.iterator();
-//
-//			while (iterator1.hasNext() && iterator2.hasNext()) {
-//				/* compute system label */
-//				Matrix featuresOfXi;
-//				Double yi = matrices.multiply(W.transpose(),
-//						(featuresOfXi = iterator1.next())).get(0, 0);
-//				Double trueLabel;
-//				/* compute step function */
-//				Double sysLabel = sgn(yi);
-//				/* check True Label not equals system label */
-//				if (sysLabel != (trueLabel = iterator2.next())) {
-//					/* update W */
-//					W = W.plus(featuresOfXi.times(trueLabel));
-//					flag = true;
-//					/* update wBar */
-//
-//				} else {
-//					flag = false;
-//				}
-//				wBar = wBar.plus(W);
-//				toeCounter += 1;
-//			}
-//			++counter; /* Increase the Epoch count by 1 */
-//		} while (noOfEpochs != counter || flag);
-//
-//		/* return average of W vector */
-//		return wBar.times(1 / toeCounter);
-//	}
-
+public class AvgPerceptron {
 	/**
 	 * 
 	 * @param W
@@ -74,10 +30,10 @@ public class TwoClassAvgPerceptron {
 	 */
 	public Matrix computeW(Matrix W, int noOfEpochs, List<Matrix> features,
 			List<Integer> T) {
-		/*variables to compute avgW*/
+		/* variables to compute avgW */
 		Matrix wBar = W; /* load initial values as same as W to compute avgW */
-		int toeCounter = 0; /* counts the Iterations to average W */
-		
+		int toeCounter = 1; /* counts the Iterations to average W */
+
 		/* Variable used to check if the data is converged */
 		int maxCount = 0;
 		boolean isConverged = false;
@@ -85,7 +41,7 @@ public class TwoClassAvgPerceptron {
 			maxCount = features.size();
 		}
 
-		MatrixOperations matrices = new MatrixOperations();
+		
 		int epochCounter = 0; /* used to count the no of Epochs */
 		int dataPointsCounter; /* used for convergence check. */
 		/* External loop on noOfEpochs */
@@ -93,14 +49,14 @@ public class TwoClassAvgPerceptron {
 			/* Internal Loop for Xi=1 to N */
 			Iterator<Matrix> iterator1 = features.iterator();
 			Iterator<Integer> iterator2 = T.iterator();
-			System.out.println("started external while loop");
+
 			dataPointsCounter = 0;
 			while (iterator1.hasNext() && iterator2.hasNext()) {
 				/* compute system label */
-				System.out.println("started internal while loop");
+				
 				Matrix featuresOfXi;
 				featuresOfXi = iterator1.next();
-				Double yi = matrices.multiply(W.transpose(), featuresOfXi).get(
+				Double yi = W.transpose().times(featuresOfXi).get(
 						0, 0);
 
 				Integer trueLabel;
@@ -114,11 +70,9 @@ public class TwoClassAvgPerceptron {
 					/* incremented if there is no change in W */
 					dataPointsCounter++;
 				}
-				/*update wBar for complete data set*/
+				/* update wBar for complete data set */
 				wBar = wBar.plus(W);
-				System.out.println(toeCounter++);
-				System.out.println("Updated wBar");
-				matrices.displayMatrix(wBar);
+				toeCounter++;
 
 			}
 			if (dataPointsCounter == maxCount) {/* convergence check */
@@ -127,16 +81,9 @@ public class TwoClassAvgPerceptron {
 			++epochCounter; /* Increase the Epoch count by 1 */
 		} while (noOfEpochs != epochCounter && !isConverged);
 
-		/* print the results of convergence */
-		if (!isConverged) {
-			System.out.println("Data set doesnt Converge!");
-		} else {
-			System.out.println("Data set Converges");
-		}
-		/* return average of W vector */
-		System.out.println("Final Epoch Value "+ epochCounter);
-		System.out.println("Final toe value "+toeCounter);
-		return wBar.times(1 / toeCounter);
+		Matrix avgW= wBar.times(1/(double)toeCounter);
+		avgW= avgW.times(1/Math.sqrt(avgW.transpose().times(avgW).get(0, 0)));
+		return avgW;
 	}
 
 	/**
@@ -154,5 +101,13 @@ public class TwoClassAvgPerceptron {
 			sysLabel = -1;
 		}
 		return sysLabel;
+	}
+
+	public double discriminantFn(Matrix featureOfXi, Matrix wMatrix) {
+		double yi = 0.0;
+		
+		yi = wMatrix.transpose().times(featureOfXi).get(0, 0);
+
+		return yi;
 	}
 }

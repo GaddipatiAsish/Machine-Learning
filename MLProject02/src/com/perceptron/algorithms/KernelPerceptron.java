@@ -5,20 +5,23 @@ import java.util.List;
 
 import weka.core.matrix.Matrix;
 
-public class TwoClassKernelPerceptron {
+public class KernelPerceptron {
 
 	/**
-	 * @description computeAlfaMatrix computes the alfa matrix and return it.
+	 * 
+	 * @param alfa
+	 *            alfa matrix NX1
 	 * @param noOfEpochs
 	 * @param features
-	 * @param T
+	 * @param trueLabels
+	 * @param kernelType
+	 * @param val
 	 * @return alfa matrix
 	 */
-	public Matrix computeAlfaMatrix(Matrix W, int noOfEpochs,
+	public Matrix computeAlfaMatrix(Matrix alfa, int noOfEpochs,
 			List<Matrix> features, List<Integer> trueLabels, char kernelType,
-			int exponent, double sigma) {
+			double val) {
 
-		Matrix alfa; /* alfa matrix NX1 */
 		int epochCounter = 0; /* counts the no of epochs */
 		int dataSetSize = 0; /* size of the input data set */
 		int dataPointsCounter; /* used for convergence check. */
@@ -30,36 +33,27 @@ public class TwoClassKernelPerceptron {
 		} else {
 			dataSetSize = features.size();
 		}
-		System.out.println("data set Size " + dataSetSize);
-		/* Initial : load alfa matrix with 0 */
-		alfa = new Matrix(trueLabels.size(), 1);
-		for (int i = 0; i < trueLabels.size(); i++) {
-			alfa.set(i, 0, 0);
-		}
+		// System.out.println("data set Size " + dataSetSize);
 
 		/* alfa computation steps */
 
 		do {/* External loop on noOfEpochs */
 			epochCounter++;
 			dataPointsCounter = 0;
-			System.out.println("Epoch : "+ epochCounter);
+
 			for (int i = 0; i < features.size(); i++) {
-				System.out.println("**** Data Point " + i + " ****");
+
 				Double yi = 0.0; /* value of the discriminant function */
-				/*feature vector of Test Xi*/
+				/* feature vector of Test Xi */
 				Matrix featuresOfXi = features.get(i);
 				Integer trueLabel = trueLabels.get(i);
 
 				/* compute the discriminantFn value */
-				yi = discriminantFn(features, trueLabels, featuresOfXi,
-						alfa, kernelType, exponent, sigma);
-
+				yi = discriminantFn(features, trueLabels, featuresOfXi, alfa,
+						kernelType, val);
 
 				/* compute system label */
 				Integer sysLabel = sgn(yi);
-				System.out.println("Discriminant Value : " + yi);
-				System.out.println("System label "+ sysLabel);
-				System.out.println("true Label "+ trueLabel);
 
 				/* check True Label not equals system label */
 				if (sysLabel != trueLabel) {
@@ -72,12 +66,11 @@ public class TwoClassKernelPerceptron {
 					dataPointsCounter++;
 				}
 			}
-			System.out.println("data points Counter "+dataPointsCounter);
+
 			if (dataPointsCounter == dataSetSize) {/* convergence check */
 				isConverged = true;
 			}
-			
-			System.out.println("IsConverged? "+ isConverged);
+
 		} while (noOfEpochs != epochCounter && !isConverged);
 
 		/* print the results of convergence */
@@ -87,9 +80,9 @@ public class TwoClassKernelPerceptron {
 			System.out.println("Data set Converges");
 		}
 
-		System.out.println("Final epochCounter " + epochCounter);
-		System.out.println("Printing alfa matrix");
-		alfa.print(1, 1);
+		// System.out.println("Final epochCounter " + epochCounter);
+		// System.out.println("Printing alfa matrix");
+		// alfa.print(1, 1);
 		return alfa;
 	}
 
@@ -100,9 +93,9 @@ public class TwoClassKernelPerceptron {
 	 * @param yi
 	 * @return system Label
 	 */
-	private Integer sgn(Double yi) {
+	public Integer sgn(Double yi) {
 		Integer sysLabel = 0;
-		if (yi >= 0) {
+		if (yi > 0) {
 			sysLabel = +1;
 		} else {
 			sysLabel = -1;
@@ -137,8 +130,15 @@ public class TwoClassKernelPerceptron {
 	 * @param exponent
 	 * @return polynomial Kernel value
 	 */
-	Double computePolynomialKij(Matrix Xi, Matrix X, int exponent) {
-		return Math.pow((1 + computeLinearKij(Xi, X)), exponent);
+	Double computePolynomialKij(Matrix Xi, Matrix X, double exponent) {
+
+		double a = Math.pow(1 + Xi.transpose().times(Xi).get(0, 0), exponent);
+
+		double b = Math.pow(1 + X.transpose().times(X).get(0, 0), exponent);
+
+		return Math.pow((1 + computeLinearKij(Xi, X)), exponent)
+				/ Math.sqrt(a * b);
+
 	}
 
 	/**
@@ -152,7 +152,10 @@ public class TwoClassKernelPerceptron {
 	 * @return Gausian Kernel value
 	 */
 	Double computeGausianKij(Matrix Xi, Matrix X, double sigma) {
-		return Math.exp(-(Xi.minus(X).norm2()) / (2 * sigma * sigma));
+		Matrix temp = Xi.minus(X);
+		double numerator = temp.transpose().times(temp).get(0, 0);
+		double denominator = -2 * sigma * sigma;
+		return Math.exp(numerator / denominator);
 	}
 
 	/**
@@ -175,7 +178,7 @@ public class TwoClassKernelPerceptron {
 	 */
 	public void classify(List<Matrix> featuresTrain,
 			List<Integer> trueLabelTrain, List<Matrix> featuresTest,
-			Matrix alfa, char kernelType, int exponent, double sigma) {
+			Matrix alfa, char kernelType, double val) {
 
 		/* complete list of sysLabels for the whole test data set */
 		List<Integer> syslabelsTest = new ArrayList<Integer>();
@@ -184,12 +187,12 @@ public class TwoClassKernelPerceptron {
 		for (int i = 0; i < featuresTest.size(); i++) {
 
 			Double yi = 0.0; /* value of the discriminant function */
-			/*feature vector of Test Xi*/
+			/* feature vector of Test Xi */
 			Matrix featuresOfXiTest = featuresTest.get(i);
 
 			/* compute the discriminantFn value */
-			yi = discriminantFn(featuresTrain, trueLabelTrain, featuresOfXiTest,
-					alfa, kernelType, exponent, sigma);
+			yi = discriminantFn(featuresTrain, trueLabelTrain,
+					featuresOfXiTest, alfa, kernelType, val);
 
 			/* compute system label for Test Xi */
 			syslabelsTest.add(sgn(yi));
@@ -206,19 +209,19 @@ public class TwoClassKernelPerceptron {
 	 * @param featureOfXiTest
 	 * @param alfa
 	 * @param kernelType
-	 * @param exponent
-	 * @param sigma
+	 * @param val
+	 *            could be exponent or sigma based upon kerneltype
 	 * @return
 	 */
 
-	double discriminantFn(List<Matrix> featuresTrain,
+	public double discriminantFn(List<Matrix> featuresTrain,
 			List<Integer> trueLabelTrain, Matrix featureOfXiTest, Matrix alfa,
-			char kernelType, int exponent, double sigma) {
+			char kernelType, double val) {
 
 		Double yi = 0.0;
 		/* loop for train Xj's */
 		for (int j = 0; j < featuresTrain.size(); j++) {
-			
+
 			double ai = alfa.get(j, 0); /* get alfa ai of training Xi */
 			double ti = trueLabelTrain.get(j); /* true label for Xi */
 
@@ -230,14 +233,12 @@ public class TwoClassKernelPerceptron {
 					k = computeLinearKij(featuresTrain.get(j), featureOfXiTest);
 					break;
 				case 'b': /* polynomial Kernel */
-					if (exponent > 1) {
-						k = computePolynomialKij(featuresTrain.get(j),
-								featureOfXiTest, exponent);
-					}
+					k = computePolynomialKij(featuresTrain.get(j),
+							featureOfXiTest, val);
 					break;
 				case 'c': /* Gausian Kernel */
 					k = computeGausianKij(featuresTrain.get(j),
-							featureOfXiTest, sigma);
+							featureOfXiTest, val);
 					break;
 				}
 				yi += ai * ti * k;
