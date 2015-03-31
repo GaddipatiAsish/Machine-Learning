@@ -2,7 +2,6 @@ package com.perceptron.algorithms;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -337,8 +336,8 @@ public class ConfMatrix {
 			List<Double> yiList = new ArrayList<Double>();
 			for (int sysLabel = 0; sysLabel < 10; sysLabel++) {
 				Matrix wMatrix = wModels.get(sysLabel);
-				List<Matrix> features = featuresModels.get(sysLabel);
-				List<Integer> trueLabel = trueLabelsModels.get(sysLabel);
+//				List<Matrix> features = featuresModels.get(sysLabel);
+//				List<Integer> trueLabel = trueLabelsModels.get(sysLabel);
 
 				yiList.add(perceptron.discriminantFn(featureOfXi, wMatrix));
 
@@ -400,8 +399,8 @@ public class ConfMatrix {
 			List<Double> yiList = new ArrayList<Double>();
 			for (int sysLabel = 0; sysLabel < 10; sysLabel++) {
 				Matrix wMatrix = wModels.get(sysLabel);
-				List<Matrix> features = featuresModels.get(sysLabel);
-				List<Integer> trueLabel = trueLabelsModels.get(sysLabel);
+//				List<Matrix> features = featuresModels.get(sysLabel);
+//				List<Integer> trueLabel = trueLabelsModels.get(sysLabel);
 
 				yiList.add(perceptron.discriminantFn(featureOfXi, wMatrix));
 

@@ -6,6 +6,7 @@ import com.perceptron.algorithms.AvgKernelPerceptron;
 import com.perceptron.algorithms.ConfMatrix;
 import com.perceptron.algorithms.KernelPerceptron;
 import com.perceptron.algorithms.LearnModel;
+import com.perceptron.algorithms.SVMConfusionMatrix;
 import com.perceptron.io.IOOperations;
 import com.perceptron.optimalParamaters.Epochs;
 import com.perceptron.optimalParamaters.Exponent;
@@ -103,7 +104,14 @@ public class Test {
 //		}
 	
 		/*#### Uncomment the below code to generate the confusion Matrices of the SVM Models.*/
-		
+		/* Linear Kernel = 'a'
+		 * Polynomial Kernel = 'b'
+		 * Gaussian kernel = 'c'
+		 */
+//		SVMConfusionMatrix confusionMatrix = new SVMConfusionMatrix();
+//		confusionMatrix.generateConfusionMatrix('a');
+//		confusionMatrix.generateConfusionMatrix('b');
+//		confusionMatrix.generateConfusionMatrix('c');
 
 	}
 }

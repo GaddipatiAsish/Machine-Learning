@@ -1,0 +1,569 @@
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing........................done. (25 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00000).
+Runtime in cpu-seconds: 0.05
+Number of SV: 62 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=507.14735
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=2.16% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>93.62% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>85.99% (rho=1.00,depth=0)
+Number of kernel evaluations: 266121
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing.............................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 328
+done. (158 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00077).
+Runtime in cpu-seconds: 0.13
+Number of SV: 145 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=2689.92158
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=4.71% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>79.43% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>74.92% (rho=1.00,depth=0)
+Number of kernel evaluations: 531973
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing.....................................................done. (54 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00096).
+Runtime in cpu-seconds: 0.09
+Number of SV: 120 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=2056.58963
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=4.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>84.23% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>77.30% (rho=1.00,depth=0)
+Number of kernel evaluations: 443780
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing..............................................................................................................done. (111 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00097).
+Runtime in cpu-seconds: 0.13
+Number of SV: 173 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=1934.79645
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=5.81% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>80.34% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>69.10% (rho=1.00,depth=0)
+Number of kernel evaluations: 579499
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing....................................................done. (53 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00064).
+Runtime in cpu-seconds: 0.09
+Number of SV: 126 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=1192.51286
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=4.22% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>82.46% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>77.30% (rho=1.00,depth=0)
+Number of kernel evaluations: 430363
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing...............................................................done. (64 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00081).
+Runtime in cpu-seconds: 0.10
+Number of SV: 142 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=1367.64208
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=4.82% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>80.87% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>72.96% (rho=1.00,depth=0)
+Number of kernel evaluations: 481727
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing...........................................done. (44 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00067).
+Runtime in cpu-seconds: 0.07
+Number of SV: 99 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=1759.27893
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=3.26% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>87.55% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>80.47% (rho=1.00,depth=0)
+Number of kernel evaluations: 351690
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing............................................done. (45 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00071).
+Runtime in cpu-seconds: 0.08
+Number of SV: 111 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=673.15696
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=3.75% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>84.29% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>79.19% (rho=1.00,depth=0)
+Number of kernel evaluations: 378806
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing.........................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 2450
+done. (298 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00093).
+Runtime in cpu-seconds: 0.21
+Number of SV: 242 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=4475.84366
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=8.11% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>72.57% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>58.22% (rho=1.00,depth=0)
+Number of kernel evaluations: 804297
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Optimizing..........................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 2501
+done. (219 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00061).
+Runtime in cpu-seconds: 0.19
+Number of SV: 232 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=0.00000
+Norm of longest example vector: |x|=2824706447.13646
+Estimated VCdim of classifier: VCdim<=6035.18936
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=7.90% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>69.15% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>58.91% (rho=1.00,depth=0)
+Number of kernel evaluations: 777017
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 561
+done. (714 iterations)
+Optimization finished (7 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.92
+Number of SV: 2037 (including 95 at upper bound)
+L1 loss: loss=38.09796
+Norm of weight vector: |w|=9.97881
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=200.15345
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=3.37% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>66.31% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>100.00% (rho=1.00,depth=0)
+Number of kernel evaluations: 3762797
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 822
+done. (723 iterations)
+Optimization finished (28 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.91
+Number of SV: 2038 (including 164 at upper bound)
+L1 loss: loss=86.85852
+Norm of weight vector: |w|=12.48742
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=312.87137
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=5.81% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>43.97% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>95.38% (rho=1.00,depth=0)
+Number of kernel evaluations: 3760205
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 805
+done. (736 iterations)
+Optimization finished (22 misclassified, maxdiff=0.00096).
+Runtime in cpu-seconds: 0.92
+Number of SV: 2050 (including 162 at upper bound)
+L1 loss: loss=84.93348
+Norm of weight vector: |w|=12.50946
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=313.97295
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=5.74% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>41.94% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>100.00% (rho=1.00,depth=0)
+Number of kernel evaluations: 3770940
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 805
+done. (743 iterations)
+Optimization finished (28 misclassified, maxdiff=0.00094).
+Runtime in cpu-seconds: 0.96
+Number of SV: 2087 (including 187 at upper bound)
+L1 loss: loss=103.99419
+Norm of weight vector: |w|=12.73262
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=325.23908
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=6.62% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>38.31% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>95.76% (rho=1.00,depth=0)
+Number of kernel evaluations: 3804691
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 791
+done. (744 iterations)
+Optimization finished (25 misclassified, maxdiff=0.00094).
+Runtime in cpu-seconds: 0.96
+Number of SV: 2064 (including 195 at upper bound)
+L1 loss: loss=98.06591
+Norm of weight vector: |w|=13.27605
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=353.50675
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=6.91% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>32.28% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>97.87% (rho=1.00,depth=0)
+Number of kernel evaluations: 3783478
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 791
+done. (746 iterations)
+Optimization finished (26 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.96
+Number of SV: 2086 (including 209 at upper bound)
+L1 loss: loss=118.37862
+Norm of weight vector: |w|=13.12083
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=345.31218
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=7.40% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>24.91% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>98.57% (rho=1.00,depth=0)
+Number of kernel evaluations: 3797638
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 792
+done. (722 iterations)
+Optimization finished (9 misclassified, maxdiff=0.00098).
+Runtime in cpu-seconds: 0.94
+Number of SV: 2035 (including 122 at upper bound)
+L1 loss: loss=57.53829
+Norm of weight vector: |w|=11.41096
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=261.41983
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=4.32% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>55.31% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>100.00% (rho=1.00,depth=0)
+Number of kernel evaluations: 3764001
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 807
+done. (736 iterations)
+Optimization finished (27 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.92
+Number of SV: 2051 (including 170 at upper bound)
+L1 loss: loss=86.75840
+Norm of weight vector: |w|=12.64328
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=320.70514
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=6.02% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>39.29% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>100.00% (rho=1.00,depth=0)
+Number of kernel evaluations: 3773223
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 805
+done. (744 iterations)
+Optimization finished (56 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.99
+Number of SV: 2082 (including 238 at upper bound)
+L1 loss: loss=153.59314
+Norm of weight vector: |w|=13.41144
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=360.73370
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=8.43% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>18.75% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>93.10% (rho=1.00,depth=0)
+Number of kernel evaluations: 3793871
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.5000
+Optimizing...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ Checking optimality of inactive variables...done.
+ Number of inactive variables = 771
+done. (732 iterations)
+Optimization finished (44 misclassified, maxdiff=0.00096).
+Runtime in cpu-seconds: 0.94
+Number of SV: 2084 (including 220 at upper bound)
+L1 loss: loss=139.89660
+Norm of weight vector: |w|=13.04114
+Norm of longest example vector: |x|=1.00000
+Estimated VCdim of classifier: VCdim<=341.14252
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=7.79% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>23.76% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>93.06% (rho=1.00,depth=0)
+Number of kernel evaluations: 3797588
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing.............................................................................................done. (94 iterations)
+Optimization finished (5 misclassified, maxdiff=0.00078).
+Runtime in cpu-seconds: 0.01
+Number of SV: 124 (including 101 at upper bound)
+L1 loss: loss=31.48846
+Norm of weight vector: |w|=0.14424
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=102.96842
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=3.83% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>80.85% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>80.85% (rho=1.00,depth=0)
+Number of kernel evaluations: 33717
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing..............................................................................................done. (95 iterations)
+Optimization finished (39 misclassified, maxdiff=0.00055).
+Runtime in cpu-seconds: 0.02
+Number of SV: 283 (including 264 at upper bound)
+L1 loss: loss=143.53130
+Norm of weight vector: |w|=0.18215
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=201.06705
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=9.56% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>52.13% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>52.13% (rho=1.00,depth=0)
+Number of kernel evaluations: 34249
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing...................................................................................................................done. (116 iterations)
+Optimization finished (17 misclassified, maxdiff=0.00096).
+Runtime in cpu-seconds: 0.01
+Number of SV: 202 (including 177 at upper bound)
+L1 loss: loss=74.25153
+Norm of weight vector: |w|=0.17238
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=159.34353
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=6.59% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>66.67% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>66.67% (rho=1.00,depth=0)
+Number of kernel evaluations: 35161
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing..........................................................................................................done. (107 iterations)
+Optimization finished (23 misclassified, maxdiff=0.00092).
+Runtime in cpu-seconds: 0.02
+Number of SV: 251 (including 225 at upper bound)
+L1 loss: loss=105.36080
+Norm of weight vector: |w|=0.18338
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=171.05865
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=8.18% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>60.34% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>60.96% (rho=1.00,depth=0)
+Number of kernel evaluations: 34813
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing..........................................................................................................................................................................done. (171 iterations)
+Optimization finished (22 misclassified, maxdiff=0.00096).
+Runtime in cpu-seconds: 0.02
+Number of SV: 212 (including 184 at upper bound)
+L1 loss: loss=85.84814
+Norm of weight vector: |w|=0.17012
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=170.41088
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=6.87% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>65.96% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>65.96% (rho=1.00,depth=0)
+Number of kernel evaluations: 38216
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing................................................................................................................................................................................done. (177 iterations)
+Optimization finished (23 misclassified, maxdiff=0.00094).
+Runtime in cpu-seconds: 0.02
+Number of SV: 234 (including 208 at upper bound)
+L1 loss: loss=87.15321
+Norm of weight vector: |w|=0.18531
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=174.17645
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=7.62% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>61.01% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>61.23% (rho=1.00,depth=0)
+Number of kernel evaluations: 38612
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing.....................................................................done. (70 iterations)
+Optimization finished (7 misclassified, maxdiff=0.00062).
+Runtime in cpu-seconds: 0.01
+Number of SV: 155 (including 136 at upper bound)
+L1 loss: loss=52.01170
+Norm of weight vector: |w|=0.15510
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=139.59091
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=5.03% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>73.63% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>74.17% (rho=1.00,depth=0)
+Number of kernel evaluations: 32490
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing................................................................................................done. (97 iterations)
+Optimization finished (10 misclassified, maxdiff=0.00097).
+Runtime in cpu-seconds: 0.02
+Number of SV: 157 (including 130 at upper bound)
+L1 loss: loss=52.61057
+Norm of weight vector: |w|=0.15412
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=133.68855
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=4.96% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>74.64% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>75.18% (rho=1.00,depth=0)
+Number of kernel evaluations: 33981
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing.................................................................................................................done. (114 iterations)
+Optimization finished (89 misclassified, maxdiff=0.00090).
+Runtime in cpu-seconds: 0.02
+Number of SV: 395 (including 376 at upper bound)
+L1 loss: loss=244.49424
+Norm of weight vector: |w|=0.19083
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=214.17120
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=13.50% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>33.68% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>33.80% (rho=1.00,depth=0)
+Number of kernel evaluations: 35630
+Writing model file...done
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..2100..2200..2300..2400..2500..2600..2700..2800..OK. (2823 examples read)
+Setting default regularization parameter C=0.0003
+Optimizing.......................................................................................................done. (104 iterations)
+Optimization finished (74 misclassified, maxdiff=0.00100).
+Runtime in cpu-seconds: 0.02
+Number of SV: 378 (including 355 at upper bound)
+L1 loss: loss=208.32828
+Norm of weight vector: |w|=0.20108
+Norm of longest example vector: |x|=77.65307
+Estimated VCdim of classifier: VCdim<=213.67198
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=12.72% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>36.17% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>36.30% (rho=1.00,depth=0)
+Number of kernel evaluations: 35029
+Writing model file...done
