@@ -30,24 +30,23 @@ public class SigmaThreadRun implements Callable<Double> {
 
 			/* Get the Training and development data */
 			IOOperations ioTrainData = new IOOperations();
-			ioTrainData.readInputData("./inputData/" + i + ".tra",false);
+			ioTrainData.readInputData("./inputData/" + i + ".tra", false);
 			this.featureMatrixTrainData = ioTrainData.getFeatureMatrix();
 			this.trueLabelsTrainData = ioTrainData.getTrueLabels();
 
 			IOOperations ioDevdata = new IOOperations();
-			ioDevdata.readInputData("./inputData/" + i + ".dev",false);
+			ioDevdata.readInputData("./inputData/" + i + ".dev", false);
 			this.featureMatrixDevData = ioDevdata.getFeatureMatrix();
 			this.trueLabelsDevData = ioDevdata.getTrueLabels();
 
 			/* Set W=[0,0....0] initially */
 			/* n denotes the data size N */
 			/* Initial : load alfa matrix with 0 */
-			
+
 			Matrix alfaMatrix = new Matrix(trueLabelsTrainData.size(), 1);
 			for (int j = 0; j < trueLabelsTrainData.size(); j++) {
 				alfaMatrix.set(i, 0, 0);
 			}
-
 
 			/* learn W using Training data using kernel Perceptron Gausian */
 			KernelPerceptron perceptron = new KernelPerceptron();
@@ -57,7 +56,7 @@ public class SigmaThreadRun implements Callable<Double> {
 			/* loop through development data to classify */
 			for (int Xi = 0; Xi < featureMatrixDevData.size(); Xi++) {
 				Matrix featureOfXi = featureMatrixDevData.get(Xi);
-				double devTrueLabel= trueLabelsDevData.get(Xi);
+				double devTrueLabel = trueLabelsDevData.get(Xi);
 				int trueLabel = trueLabelsDevData.get(Xi);/* True label of Xi */
 				if (trueLabel == 1) {
 					count++;
@@ -66,7 +65,7 @@ public class SigmaThreadRun implements Callable<Double> {
 							featureMatrixTrainData, trueLabelsTrainData,
 							featureOfXi, alfaMatrix, 'c', sigma);
 					if (perceptron.sgn(yi) > 0) {
-					//if(yi*devTrueLabel>=0){
+						// if(yi*devTrueLabel>=0){
 						favorable++;
 					}
 				}
@@ -81,4 +80,31 @@ public class SigmaThreadRun implements Callable<Double> {
 		return accuracy;
 	}
 
+	/**
+	 * Step function that takes yi and classify it to one of the possible two
+	 * classes.
+	 * 
+	 * @param yi
+	 * @return system Label
+	 */
+	public Integer sgn(Double yi) {
+		if (sigma == 0.5) {
+			Integer sysLabel = 0;
+			if (yi > 0) {
+				sysLabel = +1;
+			} else {
+				sysLabel = -1;
+			}
+			return sysLabel;
+		} else {
+			Integer sysLabel = -1;
+			if (yi > 0) {
+				sysLabel = +1;
+			} else {
+				sysLabel = -1;
+			}
+			return sysLabel;
+		}
+
+	}
 }

@@ -7,6 +7,9 @@ import weka.core.matrix.Matrix;
 
 public class KernelPerceptron {
 
+	char kernelType;
+	double val;
+
 	/**
 	 * 
 	 * @param alfa
@@ -21,7 +24,8 @@ public class KernelPerceptron {
 	public Matrix computeAlfaMatrix(Matrix alfa, int noOfEpochs,
 			List<Matrix> features, List<Integer> trueLabels, char kernelType,
 			double val) {
-
+		this.kernelType = kernelType;
+		this.val=val;
 		int epochCounter = 0; /* counts the no of epochs */
 		int dataSetSize = 0; /* size of the input data set */
 		int dataPointsCounter; /* used for convergence check. */
@@ -94,13 +98,24 @@ public class KernelPerceptron {
 	 * @return system Label
 	 */
 	public Integer sgn(Double yi) {
-		Integer sysLabel = 0;
-		if (yi > 0) {
-			sysLabel = +1;
+
+		if (kernelType == 'c' && val==0.5) { /* for Gaussian Kernel to avoid 0=0 comparisons */
+			Integer sysLabel = -1;
+			if (yi > 0) {
+				sysLabel = +1;
+			} else {
+				sysLabel = -1;
+			}
+			return sysLabel;
 		} else {
-			sysLabel = -1;
+			Integer sysLabel = 0;
+			if (yi >= 0) {
+				sysLabel = +1;
+			} else {
+				sysLabel = -1;
+			}
+			return sysLabel;
 		}
-		return sysLabel;
 
 	}
 
@@ -154,8 +169,8 @@ public class KernelPerceptron {
 	Double computeGausianKij(Matrix Xi, Matrix X, double sigma) {
 		Matrix temp = Xi.minus(X);
 		double numerator = temp.transpose().times(temp).get(0, 0);
-		double denominator = -2 * sigma * sigma;
-		return Math.exp(numerator / denominator);
+		double denominator = 2 * sigma * sigma;
+		return Math.exp((-1*numerator) / denominator);
 	}
 
 	/**
@@ -244,7 +259,7 @@ public class KernelPerceptron {
 				yi += ai * ti * k;
 			}
 		}
-
+		//System.out.println("Testing yi:"+yi);
 		return yi;
 	}
 

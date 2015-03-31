@@ -65,18 +65,18 @@ public class ConfMatrix {
 				// System.out.println("test");
 				StringTokenizer tokenizr = new StringTokenizer(
 						newLine.substring(ind), " ");
-				int featureID = 0;
-				while (featureID < 64 && tokenizr.hasMoreTokens()) {
+				int featureID = 1;
+				while (featureID <= 64 && tokenizr.hasMoreTokens()) {
 					String h = " " + featureID + ":";
 					if (newLine.substring(ind).contains(h)) {
 						String token = tokenizr.nextToken();
 						double fValue = Double.parseDouble(token
 								.substring(token.indexOf(":") + 1));
 						// System.out.println(fValue);
-						featOfXi.set(featureID, 0, fValue);
+						featOfXi.set(featureID-1, 0, fValue);
 					} else {
 						// System.out.println(featureID);
-						featOfXi.set(featureID, 0, 0);
+						featOfXi.set(featureID-1, 0, 0);
 					}
 					featureID++;
 				}
@@ -195,6 +195,8 @@ public class ConfMatrix {
 
 	public Matrix creatConfusionMatrixGau(String testdataFile)
 			throws IOException {
+		
+		System.out.println("Sigma "+ val);
 		/* create confusion matrix and initialize to 0 */
 		Matrix conMatrix = new Matrix(10, 10);
 		for (int sysLabel = 0; sysLabel < 10; sysLabel++) {
@@ -226,9 +228,12 @@ public class ConfMatrix {
 				// System.out.println(sysLabel+" : "+trueLabelsModels.get(sysLabel));
 				// alfaMatrix.transpose().print(2, 1);
 				//
-
-				yiList.add(perceptron.discriminantFn(features, trueLabel,
-						featureOfXi, alfaMatrix, 'c', val));
+				double temp=perceptron.discriminantFn(features, trueLabel,
+						featureOfXi, alfaMatrix, 'c', val);
+				if(i==0){
+					System.out.println("Temp"+temp);
+				}
+				yiList.add(temp);
 
 			}
 			// System.out.println(yiList);

@@ -64,7 +64,7 @@ public class ExponentThreadRun implements Callable<Double> {
 					double yi = perceptron.discriminantFn(
 							featureMatrixTrainData, trueLabelsTrainData,
 							featureOfXi, alfaMatrix, 'b', exponent);
-					if (perceptron.sgn(yi) > 0) {
+					if (sgn(yi) > 0) {
 						favorable++;
 					}
 				}
@@ -81,5 +81,21 @@ public class ExponentThreadRun implements Callable<Double> {
 		accuracy = favorable / (new Double(count)) * 100;
 		return accuracy;
 	}
+	/**
+	 * Step function that takes yi and classify it to one of the possible two
+	 * classes.
+	 * 
+	 * @param yi
+	 * @return system Label
+	 */
+	public Integer sgn(Double yi) {
+		Integer sysLabel = 0;
+		if (yi >= 0) {
+			sysLabel = +1;
+		} else {
+			sysLabel = -1;
+		}
+		return sysLabel;
 
+	}
 }
