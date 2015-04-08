@@ -1,11 +1,16 @@
 package com.features.filterMethods;
 
+
 import java.util.HashMap;
+
 import java.util.Map;
+
+
+import com.features.sort.MapUtility;
 
 import weka.core.matrix.Matrix;
 
-public class PearsonCorrelationCoefficient {
+public class PearsonCorrelationCoef {
 
 	public Map compute(Matrix trainData, Matrix trainlabels) {
 		Map<Integer, Double> pearson = new HashMap<Integer, Double>();
@@ -44,7 +49,6 @@ public class PearsonCorrelationCoefficient {
 
 			pearson.put(col, (denominator > 0) ? (numerator / denominator) : 0);
 		}
-		System.out.println(pearson);
-		return pearson;
+		return MapUtility.sortByValue(pearson);
 	}
 }
