@@ -1,7 +1,10 @@
 package com.features.io;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
@@ -27,7 +30,6 @@ public class IOOperations {
 			}
 			j++;
 		}
-
 		return trainData;
 	}
 
@@ -43,4 +45,44 @@ public class IOOperations {
 		return labels;
 	}
 
+	public void writeToFileSVM(Matrix newFeatures, Matrix labels,
+			String MethodName) throws Exception {
+		String fileName = "./input/svminputs/" + MethodName + "_FCount_"
+				+ newFeatures.getColumnDimension() + "_WONorm.svmvalid";
+		File file = new File(fileName);
+		BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+		for (int row = 0; row < newFeatures.getRowDimension(); row++) {
+			String line = new String();
+			for (int col = 0; col < newFeatures.getColumnDimension(); col++) {
+				if (newFeatures.get(row, col) != 0) {
+					line += " " + (col + 1) + ":" + newFeatures.get(row, col);
+				}
+			}
+			writer.append(labels.get(row, 0) + " " + line + "\n");
+		}
+		writer.close();
+	}
+
+	public void writeToFileKNN(Matrix newFeatures, Matrix trainlabels,
+			String MethodName) throws IOException {
+		String fileName = "./input/knninputs/" + MethodName + "_FCount_"
+				+ newFeatures.getColumnDimension() + ".knntrain";
+		File file = new File(fileName);
+		BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+		writer.append("@relation newFeatures\n");
+		for (int col = 0; col < newFeatures.getColumnDimension(); col++) {
+			writer.append("@attribute Attribute" + col + " NUMERIC\n");
+		}
+		writer.append("@attribute Class {Y,N}");
+		writer.append("\n@data\n");
+		for (int row = 0; row < newFeatures.getRowDimension(); row++) {
+			String line = new String();
+			for (int col = 0; col < newFeatures.getColumnDimension(); col++) {
+				line += newFeatures.get(row, col) + ",";
+			}
+			line += ((trainlabels.get(row, 0) > 0) ? "Y" : "N") + "\n";
+			writer.append(line);
+		}
+		writer.close();
+	}
 }

@@ -1,8 +1,14 @@
 package com.features.filterMethods;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
+
 import com.features.sort.MapUtility;
+
 import weka.core.matrix.Matrix;
 
 /**
@@ -43,7 +49,14 @@ public class S2NRatio {
 			negativeMeans.set(0, col, meanNegative);
 		}
 		/* Compute signal to noise ratio */
-
+	//	System.out.println("Positive mean");
+	//	negativeMeans.transpose().print(1, 6);
+		
+		List<Integer> keys= new ArrayList<Integer>();
+		List<Double> vals= new ArrayList<Double>();
+		
+		List<Integer> rankedkeys= new ArrayList<Integer>();
+		List<Double> rankedvals= new ArrayList<Double>();
 		for (int col = 0; col < trainData.getColumnDimension(); col++) {
 			double stdPositive = 0;
 			double stdNegative = 0;
@@ -61,8 +74,43 @@ public class S2NRatio {
 					- negativeMeans.get(0, col));/* compute numerator */
 			double denominator = Math.sqrt(stdPositive/noOfPositiveSamples)
 					+ Math.sqrt(stdNegative/noOfNegativeSamples);/* compute denominator */
-			s2nRatio.put(col, (denominator > 0) ? numerator / denominator : 0);
+			
+//			keys.add(col);
+//			vals.add((denominator > 0) ? (numerator / denominator) : 0);
+//			
+//			
+			
+			s2nRatio.put(col, (denominator > 0) ? (numerator / denominator) : 0);	
+			
 		}
+////		System.out.println(keys);
+////		System.out.println(vals);
+//		for(int i=0; i < 20000; i++) {
+//
+//			// Get the max value position to find the max feature id
+//
+//			int maxValuePosition = vals.indexOf(Collections.max(vals));
+//
+//			// Fill the corresponding max feature Id for ranking
+//
+//			rankedkeys.add(keys.get(maxValuePosition));
+//
+//			// Fill the max value as well corresponding to its id
+//
+//			rankedvals.add(vals.get(maxValuePosition));
+//
+//			// Remove the max feature value & id to find the next max elements
+//
+//			vals.remove(maxValuePosition);
+//
+//			keys.remove(maxValuePosition);
+//
+//			}
+//		
+//		System.out.println(rankedkeys);
+//		System.out.println(rankedvals);
+//		
+		
 		return MapUtility.sortByValue(s2nRatio);
 	}
 }

@@ -2,9 +2,7 @@ package com.features.filterMethods;
 
 
 import java.util.HashMap;
-
 import java.util.Map;
-
 
 import com.features.sort.MapUtility;
 
@@ -47,7 +45,7 @@ public class PearsonCorrelationCoef {
 			}
 			double denominator = Math.sqrt(c) * Math.sqrt(d);
 
-			pearson.put(col, (denominator > 0) ? (numerator / denominator) : 0);
+			pearson.put(col, (denominator > 0) ? (Math.abs(numerator) / denominator) : 0);
 		}
 		return MapUtility.sortByValue(pearson);
 	}
