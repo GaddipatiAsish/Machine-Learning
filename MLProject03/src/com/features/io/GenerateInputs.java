@@ -6,7 +6,7 @@ import java.util.List;
 import weka.core.matrix.Matrix;
 
 public class GenerateInputs {
-	public Matrix generateSVMFeatures(Matrix data, Matrix labels,
+	public Matrix generateFeatures(Matrix data, Matrix labels,
 			int NoOfTopFeatures, List<Integer> rankedFeatures, boolean normalise) {
 		
 		List<Integer> rankedKeys = rankedFeatures;

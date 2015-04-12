@@ -52,38 +52,12 @@ public class SVMTrainFiles {
 		/* Generate the SVM Inputs using Pearson Correlation Coef */
 		for (int j = 0; j < NValue.length; j++) {
 			GenerateInputs svm = new GenerateInputs();
-			Matrix newFeatures = svm.generateSVMFeatures(trainData,
-					trainlabels, NValue[j], pRankedFeatureid, normalize);
+			Matrix newFeatures = svm.generateFeatures(trainData, trainlabels,
+					NValue[j], pRankedFeatureid, normalize);
 			IOOperations io = new IOOperations();
 			io.writeToFileSVM(newFeatures, trainlabels, "Pearson", normalize,
 					't');
 		}
-
-		// String methodName = "Pearson";
-		// for (int p = 0; p < NValue.length; p += 5) {
-		// int batchSize = 5;
-		// if (p == 30) {
-		// batchSize = 4;
-		// }
-		//
-		// final ExecutorService service;
-		// List<Future<Double>> task = new ArrayList<Future<Double>>();
-		// service = Executors.newFixedThreadPool(batchSize);
-		//
-		// for (int i = p; i < batchSize; i++) {
-		//
-		// GenerateInputs svmInputs = new GenerateInputs();
-		// Matrix newFeatures = svmInputs.generateSVMInputs(trainData,
-		// trainlabels, NValue[i], pearsonMap, normalize);
-		//
-		// IOOperations io = new IOOperations();
-		// io.writeToFileSVM(newFeatures, trainlabels, "Pearson");
-		// task.add(service.submit(new ThreadRun(NValue[i], newFeatures,
-		// trainlabels, methodName)));
-		// }
-		// /* shut down the service */
-		// service.shutdownNow();
-		// }
 
 		/********** compute S2N Ratio, rank the features and generate svm input files **************/
 		S2NRatio s2nRatio = new S2NRatio();
@@ -101,8 +75,8 @@ public class SVMTrainFiles {
 		for (int j = 0; j < NValue.length; j++) {
 			System.out.println("Working on N = " + NValue[j]);
 			GenerateInputs svm = new GenerateInputs();
-			Matrix newFeatures = svm.generateSVMFeatures(trainData,
-					trainlabels, NValue[j], s2nRankedFeatureid, normalize);
+			Matrix newFeatures = svm.generateFeatures(trainData, trainlabels,
+					NValue[j], s2nRankedFeatureid, normalize);
 			IOOperations io = new IOOperations();
 			io.writeToFileSVM(newFeatures, trainlabels, "S2Noise", normalize,
 					't');
@@ -123,8 +97,8 @@ public class SVMTrainFiles {
 		for (int j = 0; j < NValue.length; j++) {
 			System.out.println("Working on N = " + NValue[j]);
 			GenerateInputs svm = new GenerateInputs();
-			Matrix newFeatures = svm.generateSVMFeatures(trainData,
-					trainlabels, NValue[j], ttRankedFeatureid, normalize);
+			Matrix newFeatures = svm.generateFeatures(trainData, trainlabels,
+					NValue[j], ttRankedFeatureid, normalize);
 			IOOperations io = new IOOperations();
 			io.writeToFileSVM(newFeatures, trainlabels, "TTest", normalize, 't');
 		}

@@ -14,7 +14,7 @@ public class SVMTestFiles {
 				10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000,
 				19000, 20000 };
 
-		boolean normalize = true; /* Normalization parameter */
+		boolean normalize = false; /* Normalization parameter */
 		String testDataFile = args[0];/* Test File */
 		String testLabelsFile = args[1];/* Test Labels File */
 
@@ -35,7 +35,7 @@ public class SVMTestFiles {
 		for (int j = 0; j < NValue.length; j++) {
 			System.out.println("Working on N = " + NValue[j]);
 			GenerateInputs svm = new GenerateInputs();
-			Matrix newFeatures = svm.generateSVMFeatures(testData, testlabels,
+			Matrix newFeatures = svm.generateFeatures(testData, testlabels,
 					NValue[j], pRankedFeatureid, normalize);
 			IOOperations io = new IOOperations();
 			io.writeToFileSVM(newFeatures, testlabels, "Pearson", normalize, 'v');
@@ -50,7 +50,7 @@ public class SVMTestFiles {
 		for (int j = 0; j < NValue.length; j++) {
 			System.out.println("Working on N = " + NValue[j]);
 			GenerateInputs svm = new GenerateInputs();
-			Matrix newFeatures = svm.generateSVMFeatures(testData, testlabels,
+			Matrix newFeatures = svm.generateFeatures(testData, testlabels,
 					NValue[j], s2nRankedFeatureid, normalize);
 			IOOperations io = new IOOperations();
 			io.writeToFileSVM(newFeatures, testlabels, "S2Noise", normalize,'v');
@@ -65,7 +65,7 @@ public class SVMTestFiles {
 		 for (int j = 0; j < NValue.length; j++) {
 			 System.out.println("Working on N = "+NValue[j]);
 			 GenerateInputs svm = new GenerateInputs();
-			 Matrix newFeatures = svm.generateSVMFeatures(testData,
+			 Matrix newFeatures = svm.generateFeatures(testData,
 					 testlabels, NValue[j], ttRankedFeatureid, normalize);
 			 IOOperations io = new IOOperations();
 			 io.writeToFileSVM(newFeatures, testlabels, "TTest",normalize,'v');

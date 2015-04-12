@@ -26,36 +26,70 @@ public class KNNAlgorithm {
 				800, 900, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000,
 				10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000,
 				19000, 20000 };
-		String MethodName = "Pearson";
-		int k = 1;
-		for (int n = 0; n < NValue.length; n++) {
-			System.out.println(MethodName+":"+NValue[n]);
-			String trainData = "./input/knninputs/" + MethodName + "_FCount_"
-					+ NValue[n] + ".knntrain";
-			String validData = "./input/knninputs/" + MethodName + "_FCount_"
-					+ NValue[n] + ".knnvalid";
-			BufferedReader datafileTrain = readDataFile(trainData);
-			Instances dataTrain = new Instances(datafileTrain);
 
-			BufferedReader datafileValid = readDataFile(validData);
-			Instances dataValid = new Instances(datafileValid);
+		boolean normalize = true;
 
-			Classifier iBk = new IBk(k);
-			iBk.buildClassifier(dataTrain);
-			double num = 0, den = 0;
-			for (int j = 0; j < dataValid.numInstances(); j++) {
-				Instance ins = dataValid.instance(j);
-
-				if (dataTrain.classAttribute().value(
-						(int) iBk.classifyInstance(ins)) == dataTrain
-						.classAttribute().value(
-								(int) dataValid.instance(j).classValue())) {
-					num++;
-				}
-				den++;
+		String MethodName = null;
+		for (int h = 0; h < 3; h++) {
+			System.out.println("\n\n");
+			switch (h) {
+			case 0:
+				MethodName = "Pearson";
+				break;
+			case 1:
+				MethodName = "S2Noise";
+				break;
+			case 2:
+				MethodName = "TTest";
+				break;
 			}
-			System.out.println(num / den);
-		}
 
+			for (int k = 1; k < 4; k++) {
+				System.out.println("\n\n");
+				for (int n = 0; n < NValue.length; n++) {
+
+					String trainData;
+					String validData;
+					if (normalize) {/* Normalized data */
+						trainData = "./input/knninputs/" + MethodName
+								+ "_FCount_" + NValue[n] + "_WNorm.knntrain";
+						validData = "./input/knninputs/" + MethodName
+								+ "_FCount_" + NValue[n] + "_WNorm.knnvalid";
+					} else {/* Actual data */
+						trainData = "./input/knninputs/" + MethodName
+								+ "_FCount_" + NValue[n] + "_WOutNorm.knntrain";
+						validData = "./input/knninputs/" + MethodName
+								+ "_FCount_" + NValue[n] + "_WOutNorm.knnvalid";
+					}
+
+					BufferedReader datafileTrain = readDataFile(trainData);
+					Instances dataTrain = new Instances(datafileTrain);
+					dataTrain.setClassIndex(dataTrain.numAttributes() - 1);
+
+					BufferedReader datafileValid = readDataFile(validData);
+					Instances dataValid = new Instances(datafileValid);
+					dataValid.setClassIndex(dataValid.numAttributes() - 1);
+
+					Classifier iBk = new IBk(k);
+					iBk.buildClassifier(dataTrain);
+					double num = 0, den = 0;
+					for (int j = 0; j < dataValid.numInstances(); j++) {
+						Instance ins = dataValid.instance(j);
+
+						if (dataTrain.classAttribute().value(
+								(int) iBk.classifyInstance(ins)) == dataTrain
+								.classAttribute().value(
+										(int) dataValid.instance(j)
+												.classValue())) {
+							num++;
+						}
+						den++;
+					}
+					System.out.println("Normalization : " + normalize
+							+ " For K = " + k + " Algorithm :" + MethodName
+							+ " N: " + NValue[n] + " Accuracy: " + (num / den)*100);
+				}
+			}
+		}
 	}
 }
