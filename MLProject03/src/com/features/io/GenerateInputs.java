@@ -1,23 +1,16 @@
 package com.features.io;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+
 
 import weka.core.matrix.Matrix;
 
 public class GenerateInputs {
-	public Matrix generateSVMInputs(Matrix data, Matrix labels,
-			int NoOfTopFeatures, Map<Integer, Double> map, boolean normalise) {
-		List<Integer> rankedKeys = new ArrayList<Integer>();
-		Set<Integer> keys = map.keySet();
+	public Matrix generateSVMFeatures(Matrix data, Matrix labels,
+			int NoOfTopFeatures, List<Integer> rankedFeatures, boolean normalise) {
 		
-		System.out.println(keys);
+		List<Integer> rankedKeys = rankedFeatures;
 		
-		rankedKeys.addAll(keys);
-		System.out.println(rankedKeys);
-		//System.out.println(rankedKeys);
 		Matrix newFeatures = new Matrix(data.getRowDimension(),
 				NoOfTopFeatures, 0);
 		for (int row = 0; row < data.getRowDimension(); row++) {
@@ -33,7 +26,6 @@ public class GenerateInputs {
 				newFeatures.setMatrix(row, row, 0, NoOfTopFeatures - 1, line);
 			}
 		}
-
 		return newFeatures;
 	}
 

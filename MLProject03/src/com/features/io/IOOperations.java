@@ -3,9 +3,13 @@ package com.features.io;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 import weka.core.matrix.Matrix;
@@ -46,9 +50,30 @@ public class IOOperations {
 	}
 
 	public void writeToFileSVM(Matrix newFeatures, Matrix labels,
-			String MethodName) throws Exception {
-		String fileName = "./input/svminputs/" + MethodName + "_FCount_"
-				+ newFeatures.getColumnDimension() + "_WONorm.svmvalid";
+			String MethodName, boolean normalize, char type) throws Exception {
+		String fileName;
+		if (type == 'v') {/* for Validation FIles */
+			if (normalize) {
+				fileName = "./svm_light_OS10.8.4_i7/svmData/" + MethodName
+						+ "_FCount_" + newFeatures.getColumnDimension()
+						+ "_WNorm.svmvalid";
+			} else {
+				fileName = "./svm_light_OS10.8.4_i7/svmData/" + MethodName
+						+ "_FCount_" + newFeatures.getColumnDimension()
+						+ "_WOutNorm.svmvalid";
+			}
+		} else {/* for training files */
+			if (normalize) {
+				fileName = "./svm_light_OS10.8.4_i7/svmData/" + MethodName
+						+ "_FCount_" + newFeatures.getColumnDimension()
+						+ "_WNorm.svmtrain";
+			} else {
+				fileName = "./svm_light_OS10.8.4_i7/svmData/" + MethodName
+						+ "_FCount_" + newFeatures.getColumnDimension()
+						+ "_WOutNorm.svmtrain";
+			}
+
+		}
 		File file = new File(fileName);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 		for (int row = 0; row < newFeatures.getRowDimension(); row++) {
@@ -84,5 +109,32 @@ public class IOOperations {
 			writer.append(line);
 		}
 		writer.close();
+	}
+
+	public void writeRanksToFile(List<Integer> rankedFeatureid,
+			String methodName) throws Exception {
+		System.out.println(rankedFeatureid.size());
+		String fileName = "./ranks/" + methodName + ".rank";
+		File file = new File(fileName);
+		BufferedWriter bwriter = new BufferedWriter(new FileWriter(file));
+		Iterator<Integer> iterator = rankedFeatureid.iterator();
+		while (iterator.hasNext()) {
+			bwriter.append(iterator.next().toString());
+			bwriter.append("\n");
+		}
+		bwriter.close();
+	}
+
+	public List<Integer> readRanksFromFile(String methodName) throws Exception {
+		System.out.println("Read ranks for " + methodName);
+		List<Integer> rankedFeatureid = new LinkedList<Integer>();
+		String fileName = "./ranks/" + methodName + ".rank";
+		File file = new File(fileName);
+		BufferedReader breader = new BufferedReader(new FileReader(file));
+		String line;
+		while ((line = breader.readLine()) != null) {
+			rankedFeatureid.add(Integer.parseInt(line));
+		}
+		return rankedFeatureid;
 	}
 }
