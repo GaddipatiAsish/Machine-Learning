@@ -1,0 +1,263 @@
+
+
+
+
+
+
+Normalization : true For K = 1 Algorithm :Pearson N: 1 Accuracy: 59.0
+Normalization : true For K = 1 Algorithm :Pearson N: 5 Accuracy: 67.0
+Normalization : true For K = 1 Algorithm :Pearson N: 10 Accuracy: 82.33333333333334
+Normalization : true For K = 1 Algorithm :Pearson N: 20 Accuracy: 82.33333333333334
+Normalization : true For K = 1 Algorithm :Pearson N: 50 Accuracy: 86.0
+Normalization : true For K = 1 Algorithm :Pearson N: 100 Accuracy: 83.33333333333334
+Normalization : true For K = 1 Algorithm :Pearson N: 200 Accuracy: 89.66666666666666
+Normalization : true For K = 1 Algorithm :Pearson N: 300 Accuracy: 83.0
+Normalization : true For K = 1 Algorithm :Pearson N: 400 Accuracy: 79.66666666666666
+Normalization : true For K = 1 Algorithm :Pearson N: 500 Accuracy: 77.0
+Normalization : true For K = 1 Algorithm :Pearson N: 600 Accuracy: 71.66666666666667
+Normalization : true For K = 1 Algorithm :Pearson N: 700 Accuracy: 73.0
+Normalization : true For K = 1 Algorithm :Pearson N: 800 Accuracy: 74.66666666666667
+Normalization : true For K = 1 Algorithm :Pearson N: 900 Accuracy: 72.0
+Normalization : true For K = 1 Algorithm :Pearson N: 1000 Accuracy: 71.0
+Normalization : true For K = 1 Algorithm :Pearson N: 2000 Accuracy: 65.33333333333333
+Normalization : true For K = 1 Algorithm :Pearson N: 3000 Accuracy: 69.66666666666667
+Normalization : true For K = 1 Algorithm :Pearson N: 4000 Accuracy: 62.0
+Normalization : true For K = 1 Algorithm :Pearson N: 5000 Accuracy: 60.333333333333336
+Normalization : true For K = 1 Algorithm :Pearson N: 6000 Accuracy: 64.33333333333333
+Normalization : true For K = 1 Algorithm :Pearson N: 7000 Accuracy: 62.66666666666667
+Normalization : true For K = 1 Algorithm :Pearson N: 8000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :Pearson N: 9000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :Pearson N: 10000 Accuracy: 54.333333333333336
+Normalization : true For K = 1 Algorithm :Pearson N: 11000 Accuracy: 54.666666666666664
+Normalization : true For K = 1 Algorithm :Pearson N: 12000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :Pearson N: 13000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :Pearson N: 14000 Accuracy: 53.333333333333336
+Normalization : true For K = 1 Algorithm :Pearson N: 15000 Accuracy: 53.333333333333336
+Normalization : true For K = 1 Algorithm :Pearson N: 16000 Accuracy: 53.0
+Normalization : true For K = 1 Algorithm :Pearson N: 17000 Accuracy: 53.0
+Normalization : true For K = 1 Algorithm :Pearson N: 18000 Accuracy: 53.0
+Normalization : true For K = 1 Algorithm :Pearson N: 19000 Accuracy: 53.333333333333336
+Normalization : true For K = 1 Algorithm :Pearson N: 20000 Accuracy: 53.0
+
+
+
+Normalization : true For K = 2 Algorithm :Pearson N: 1 Accuracy: 59.0
+Normalization : true For K = 2 Algorithm :Pearson N: 5 Accuracy: 65.66666666666666
+Normalization : true For K = 2 Algorithm :Pearson N: 10 Accuracy: 82.0
+Normalization : true For K = 2 Algorithm :Pearson N: 20 Accuracy: 82.0
+Normalization : true For K = 2 Algorithm :Pearson N: 50 Accuracy: 86.0
+Normalization : true For K = 2 Algorithm :Pearson N: 100 Accuracy: 83.33333333333334
+Normalization : true For K = 2 Algorithm :Pearson N: 200 Accuracy: 87.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 300 Accuracy: 76.33333333333333
+Normalization : true For K = 2 Algorithm :Pearson N: 400 Accuracy: 73.0
+Normalization : true For K = 2 Algorithm :Pearson N: 500 Accuracy: 80.0
+Normalization : true For K = 2 Algorithm :Pearson N: 600 Accuracy: 73.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 700 Accuracy: 78.66666666666666
+Normalization : true For K = 2 Algorithm :Pearson N: 800 Accuracy: 74.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 900 Accuracy: 72.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 1000 Accuracy: 69.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 2000 Accuracy: 62.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 3000 Accuracy: 66.33333333333333
+Normalization : true For K = 2 Algorithm :Pearson N: 4000 Accuracy: 60.333333333333336
+Normalization : true For K = 2 Algorithm :Pearson N: 5000 Accuracy: 56.99999999999999
+Normalization : true For K = 2 Algorithm :Pearson N: 6000 Accuracy: 62.66666666666667
+Normalization : true For K = 2 Algorithm :Pearson N: 7000 Accuracy: 63.0
+Normalization : true For K = 2 Algorithm :Pearson N: 8000 Accuracy: 59.333333333333336
+Normalization : true For K = 2 Algorithm :Pearson N: 9000 Accuracy: 57.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 10000 Accuracy: 57.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 11000 Accuracy: 57.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 12000 Accuracy: 57.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 13000 Accuracy: 55.333333333333336
+Normalization : true For K = 2 Algorithm :Pearson N: 14000 Accuracy: 53.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 15000 Accuracy: 54.333333333333336
+Normalization : true For K = 2 Algorithm :Pearson N: 16000 Accuracy: 54.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 17000 Accuracy: 54.333333333333336
+Normalization : true For K = 2 Algorithm :Pearson N: 18000 Accuracy: 54.333333333333336
+Normalization : true For K = 2 Algorithm :Pearson N: 19000 Accuracy: 54.666666666666664
+Normalization : true For K = 2 Algorithm :Pearson N: 20000 Accuracy: 54.333333333333336
+
+
+
+Normalization : true For K = 3 Algorithm :Pearson N: 1 Accuracy: 59.0
+Normalization : true For K = 3 Algorithm :Pearson N: 5 Accuracy: 67.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 10 Accuracy: 82.33333333333334
+Normalization : true For K = 3 Algorithm :Pearson N: 20 Accuracy: 84.0
+Normalization : true For K = 3 Algorithm :Pearson N: 50 Accuracy: 86.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 100 Accuracy: 90.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 200 Accuracy: 91.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 300 Accuracy: 78.66666666666666
+Normalization : true For K = 3 Algorithm :Pearson N: 400 Accuracy: 81.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 500 Accuracy: 84.0
+Normalization : true For K = 3 Algorithm :Pearson N: 600 Accuracy: 78.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 700 Accuracy: 81.66666666666667
+Normalization : true For K = 3 Algorithm :Pearson N: 800 Accuracy: 79.0
+Normalization : true For K = 3 Algorithm :Pearson N: 900 Accuracy: 76.66666666666667
+Normalization : true For K = 3 Algorithm :Pearson N: 1000 Accuracy: 74.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 2000 Accuracy: 71.33333333333334
+Normalization : true For K = 3 Algorithm :Pearson N: 3000 Accuracy: 74.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 4000 Accuracy: 62.66666666666667
+Normalization : true For K = 3 Algorithm :Pearson N: 5000 Accuracy: 62.66666666666667
+Normalization : true For K = 3 Algorithm :Pearson N: 6000 Accuracy: 68.0
+Normalization : true For K = 3 Algorithm :Pearson N: 7000 Accuracy: 55.00000000000001
+Normalization : true For K = 3 Algorithm :Pearson N: 8000 Accuracy: 52.666666666666664
+Normalization : true For K = 3 Algorithm :Pearson N: 9000 Accuracy: 52.666666666666664
+Normalization : true For K = 3 Algorithm :Pearson N: 10000 Accuracy: 52.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 11000 Accuracy: 51.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 12000 Accuracy: 51.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 13000 Accuracy: 51.66666666666667
+Normalization : true For K = 3 Algorithm :Pearson N: 14000 Accuracy: 51.33333333333333
+Normalization : true For K = 3 Algorithm :Pearson N: 15000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :Pearson N: 16000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :Pearson N: 17000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :Pearson N: 18000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :Pearson N: 19000 Accuracy: 50.66666666666667
+Normalization : true For K = 3 Algorithm :Pearson N: 20000 Accuracy: 51.0
+
+
+
+
+
+
+Normalization : true For K = 1 Algorithm :S2Noise N: 1 Accuracy: 59.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 5 Accuracy: 67.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 10 Accuracy: 80.33333333333333
+Normalization : true For K = 1 Algorithm :S2Noise N: 20 Accuracy: 85.33333333333334
+Normalization : true For K = 1 Algorithm :S2Noise N: 50 Accuracy: 84.66666666666667
+Normalization : true For K = 1 Algorithm :S2Noise N: 100 Accuracy: 88.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 200 Accuracy: 78.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 300 Accuracy: 88.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 400 Accuracy: 86.33333333333333
+Normalization : true For K = 1 Algorithm :S2Noise N: 500 Accuracy: 80.33333333333333
+Normalization : true For K = 1 Algorithm :S2Noise N: 600 Accuracy: 76.33333333333333
+Normalization : true For K = 1 Algorithm :S2Noise N: 700 Accuracy: 74.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 800 Accuracy: 71.66666666666667
+Normalization : true For K = 1 Algorithm :S2Noise N: 900 Accuracy: 70.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 1000 Accuracy: 68.33333333333333
+Normalization : true For K = 1 Algorithm :S2Noise N: 2000 Accuracy: 72.33333333333334
+Normalization : true For K = 1 Algorithm :S2Noise N: 3000 Accuracy: 63.66666666666667
+Normalization : true For K = 1 Algorithm :S2Noise N: 4000 Accuracy: 64.33333333333333
+Normalization : true For K = 1 Algorithm :S2Noise N: 5000 Accuracy: 63.66666666666667
+Normalization : true For K = 1 Algorithm :S2Noise N: 6000 Accuracy: 70.33333333333334
+Normalization : true For K = 1 Algorithm :S2Noise N: 7000 Accuracy: 62.66666666666667
+Normalization : true For K = 1 Algorithm :S2Noise N: 8000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :S2Noise N: 9000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 10000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 11000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 12000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :S2Noise N: 13000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 14000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :S2Noise N: 15000 Accuracy: 53.333333333333336
+Normalization : true For K = 1 Algorithm :S2Noise N: 16000 Accuracy: 53.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 17000 Accuracy: 53.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 18000 Accuracy: 53.0
+Normalization : true For K = 1 Algorithm :S2Noise N: 19000 Accuracy: 53.333333333333336
+Normalization : true For K = 1 Algorithm :S2Noise N: 20000 Accuracy: 53.0
+
+
+
+Normalization : true For K = 2 Algorithm :S2Noise N: 1 Accuracy: 59.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 5 Accuracy: 65.33333333333333
+Normalization : true For K = 2 Algorithm :S2Noise N: 10 Accuracy: 77.66666666666666
+Normalization : true For K = 2 Algorithm :S2Noise N: 20 Accuracy: 85.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 50 Accuracy: 84.33333333333334
+Normalization : true For K = 2 Algorithm :S2Noise N: 100 Accuracy: 84.33333333333334
+Normalization : true For K = 2 Algorithm :S2Noise N: 200 Accuracy: 68.33333333333333
+Normalization : true For K = 2 Algorithm :S2Noise N: 300 Accuracy: 83.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 400 Accuracy: 83.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 500 Accuracy: 72.33333333333334
+Normalization : true For K = 2 Algorithm :S2Noise N: 600 Accuracy: 65.66666666666666
+Normalization : true For K = 2 Algorithm :S2Noise N: 700 Accuracy: 65.33333333333333
+Normalization : true For K = 2 Algorithm :S2Noise N: 800 Accuracy: 64.66666666666666
+Normalization : true For K = 2 Algorithm :S2Noise N: 900 Accuracy: 63.66666666666667
+Normalization : true For K = 2 Algorithm :S2Noise N: 1000 Accuracy: 63.66666666666667
+Normalization : true For K = 2 Algorithm :S2Noise N: 2000 Accuracy: 65.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 3000 Accuracy: 61.66666666666667
+Normalization : true For K = 2 Algorithm :S2Noise N: 4000 Accuracy: 62.33333333333333
+Normalization : true For K = 2 Algorithm :S2Noise N: 5000 Accuracy: 61.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 6000 Accuracy: 68.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 7000 Accuracy: 63.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 8000 Accuracy: 59.0
+Normalization : true For K = 2 Algorithm :S2Noise N: 9000 Accuracy: 57.666666666666664
+Normalization : true For K = 2 Algorithm :S2Noise N: 10000 Accuracy: 57.333333333333336
+Normalization : true For K = 2 Algorithm :S2Noise N: 11000 Accuracy: 57.666666666666664
+Normalization : true For K = 2 Algorithm :S2Noise N: 12000 Accuracy: 56.99999999999999
+Normalization : true For K = 2 Algorithm :S2Noise N: 13000 Accuracy: 55.00000000000001
+Normalization : true For K = 2 Algorithm :S2Noise N: 14000 Accuracy: 53.666666666666664
+Normalization : true For K = 2 Algorithm :S2Noise N: 15000 Accuracy: 53.666666666666664
+Normalization : true For K = 2 Algorithm :S2Noise N: 16000 Accuracy: 54.666666666666664
+Normalization : true For K = 2 Algorithm :S2Noise N: 17000 Accuracy: 54.333333333333336
+Normalization : true For K = 2 Algorithm :S2Noise N: 18000 Accuracy: 54.333333333333336
+Normalization : true For K = 2 Algorithm :S2Noise N: 19000 Accuracy: 54.666666666666664
+Normalization : true For K = 2 Algorithm :S2Noise N: 20000 Accuracy: 54.333333333333336
+
+
+
+Normalization : true For K = 3 Algorithm :S2Noise N: 1 Accuracy: 59.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 5 Accuracy: 67.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 10 Accuracy: 80.66666666666666
+Normalization : true For K = 3 Algorithm :S2Noise N: 20 Accuracy: 86.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 50 Accuracy: 84.33333333333334
+Normalization : true For K = 3 Algorithm :S2Noise N: 100 Accuracy: 88.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 200 Accuracy: 86.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 300 Accuracy: 88.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 400 Accuracy: 88.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 500 Accuracy: 75.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 600 Accuracy: 68.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 700 Accuracy: 66.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 800 Accuracy: 65.66666666666666
+Normalization : true For K = 3 Algorithm :S2Noise N: 900 Accuracy: 63.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 1000 Accuracy: 65.66666666666666
+Normalization : true For K = 3 Algorithm :S2Noise N: 2000 Accuracy: 65.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 3000 Accuracy: 63.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 4000 Accuracy: 65.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 5000 Accuracy: 62.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 6000 Accuracy: 69.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 7000 Accuracy: 55.00000000000001
+Normalization : true For K = 3 Algorithm :S2Noise N: 8000 Accuracy: 52.666666666666664
+Normalization : true For K = 3 Algorithm :S2Noise N: 9000 Accuracy: 52.666666666666664
+Normalization : true For K = 3 Algorithm :S2Noise N: 10000 Accuracy: 52.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 11000 Accuracy: 51.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 12000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 13000 Accuracy: 51.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 14000 Accuracy: 51.33333333333333
+Normalization : true For K = 3 Algorithm :S2Noise N: 15000 Accuracy: 50.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 16000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 17000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 18000 Accuracy: 51.0
+Normalization : true For K = 3 Algorithm :S2Noise N: 19000 Accuracy: 50.66666666666667
+Normalization : true For K = 3 Algorithm :S2Noise N: 20000 Accuracy: 51.0
+
+
+
+
+
+
+Normalization : true For K = 1 Algorithm :TTest N: 1 Accuracy: 59.0
+Normalization : true For K = 1 Algorithm :TTest N: 5 Accuracy: 67.0
+Normalization : true For K = 1 Algorithm :TTest N: 10 Accuracy: 82.33333333333334
+Normalization : true For K = 1 Algorithm :TTest N: 20 Accuracy: 82.33333333333334
+Normalization : true For K = 1 Algorithm :TTest N: 50 Accuracy: 86.0
+Normalization : true For K = 1 Algorithm :TTest N: 100 Accuracy: 83.33333333333334
+Normalization : true For K = 1 Algorithm :TTest N: 200 Accuracy: 89.66666666666666
+Normalization : true For K = 1 Algorithm :TTest N: 300 Accuracy: 83.0
+Normalization : true For K = 1 Algorithm :TTest N: 400 Accuracy: 79.66666666666666
+Normalization : true For K = 1 Algorithm :TTest N: 500 Accuracy: 77.0
+Normalization : true For K = 1 Algorithm :TTest N: 600 Accuracy: 71.66666666666667
+Normalization : true For K = 1 Algorithm :TTest N: 700 Accuracy: 73.0
+Normalization : true For K = 1 Algorithm :TTest N: 800 Accuracy: 74.66666666666667
+Normalization : true For K = 1 Algorithm :TTest N: 900 Accuracy: 72.0
+Normalization : true For K = 1 Algorithm :TTest N: 1000 Accuracy: 71.0
+Normalization : true For K = 1 Algorithm :TTest N: 2000 Accuracy: 64.33333333333333
+Normalization : true For K = 1 Algorithm :TTest N: 3000 Accuracy: 62.33333333333333
+Normalization : true For K = 1 Algorithm :TTest N: 4000 Accuracy: 61.66666666666667
+Normalization : true For K = 1 Algorithm :TTest N: 5000 Accuracy: 66.0
+Normalization : true For K = 1 Algorithm :TTest N: 6000 Accuracy: 65.33333333333333
+Normalization : true For K = 1 Algorithm :TTest N: 7000 Accuracy: 62.66666666666667
+Normalization : true For K = 1 Algorithm :TTest N: 8000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :TTest N: 9000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :TTest N: 10000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :TTest N: 11000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :TTest N: 12000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :TTest N: 13000 Accuracy: 54.0
+Normalization : true For K = 1 Algorithm :TTest N: 14000 Accuracy: 53.666666666666664
+Normalization : true For K = 1 Algorithm :TTest N: 15000 Accuracy: 53.333333333333336
