@@ -27,7 +27,7 @@ public class KNNAlgorithm {
 				10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000,
 				19000, 20000 };
 
-		boolean normalize = true;
+		boolean normalize = false;
 
 		String MethodName = null;
 		for (int h = 0; h < 3; h++) {
@@ -44,7 +44,15 @@ public class KNNAlgorithm {
 				break;
 			}
 
-			for (int k = 1; k < 4; k++) {
+			for (int l = 1; l < 4; l++) {
+				int k=0;
+				if(l==1)
+					k=1;
+				else if(l==2)
+					k=5;
+				else if(l==3)
+					k=10;
+				
 				System.out.println("\n\n");
 				for (int n = 0; n < NValue.length; n++) {
 
